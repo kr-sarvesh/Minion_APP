@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      textarea {
+        width: 80%;
+        height: 10vh;
+        display: block;
+        margin: 1rem;
+        padding: 5rem;
+      }
+      #output {
+        border: 0.5px solid rgba(0, 0, 0, 0.144);
+        padding: 100px;
+        font-size: 1.1rem;
+        border-radius: 10px;
+        width: 800px;
+        max-width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Talk Banana</h1>
+        <textarea
+          placeholder="Put your sentence in English here & 
+          we will convert it into Banana"
+          id="text-input"
+        ></textarea>
+        <div class="btn-container">
+          <button id="click">Translate</button>
+        </div>
+        <div class="translator-bx" style="font-size: larger">
+          <div id="output"></div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
